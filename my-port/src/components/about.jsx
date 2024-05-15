@@ -1,37 +1,43 @@
-
+import React, { useState } from "react";
 import Icon from "./ui/icon";
+import Contact from "./contact"; // Import the Contact component
+
 function About() {
-    return (
-      
-<section id="hero">
-  <div class="container">
-    <div class="hero-content">
-    <h1>hey there 👋</h1>
-    <div class="wrapper">
-  <div class="bg"><span>I am</span> Mohammed <br/> Rharbi </div>
-  <div class="fg"><span>I am</span> Mohammed <br/>  Rharbi </div>
-</div>
-      <p>full-stack developer, passionate about crafting digital solutions.</p>
+  const [showForm, setShowForm] = useState(false);
 
-      <div className="vt">
-      <button className="Btn"></button>
-        <a href="/src/assets/Mohammed_Rharbi.pdf" download={'Mohammed Rharbi CV '}>
-        <button className="do "></button>
-        </a>
+  const toggleForm = () => {
+    setShowForm(!showForm);
+  };
+
+  return (
+    <section id="hero">
+      <div className="container">
+        <div className="hero-content">
+          <h1>hey there 👋</h1>
+          <div className="wrapper">
+            <div className="bg"><span>I am</span> Mohammed <br/> Rharbi </div>
+            <div className="fg"><span>I am</span> Mohammed <br/>  Rharbi </div>
+          </div>
+          <p><span>full-stack developer</span> passionate about crafting digital solutions.</p>
+
+          <div className="vt">
+            <button onClick={toggleForm} className="Btn">hire me</button>
+            <a href="/src/assets/Mohammed_Rharbi.pdf" download={'Mohammed Rharbi CV '}>
+              <button className="do "></button>
+            </a>
+          </div>
+        </div>
+
+        <div className="hero-image">
+          <img src="/public/تصميم بدون عنوان.png" alt="Mohammed Rharbi"/>
+        </div>
       </div>
-    </div>
 
-    <div class="hero-image">
-      <img src="/public/تصميم بدون عنوان.png" alt="Mohammed Rharbi"/>
-    </div>
-  </div>
-
-  <div className="icons">
-  <Icon/>
-  </div>
-
-</section>
-
-    )
+      <div className="icons">
+        <Icon/>
+      </div>
+    </section>
+  )
 }
+
 export default About;

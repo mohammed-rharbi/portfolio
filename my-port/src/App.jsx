@@ -1,9 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
+
 import Navbar from './components/nav';
 import About from './components/about';
+import Contact from './components/contact';
+import Cards from './components/ui/cards';
 
 
 
@@ -11,21 +13,16 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <Router>
       <Navbar />
-      
-      <About />
 
-    {/* <div class="card">
-    <div class="align">
-        <span class="red"></span>
-        <span class="yellow"></span>
-        <span class="green"></span>
-    </div>
-    <h1>HOVER ME</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio assumenda?</p>
-    </div> */}
-    </>
+      <Routes>
+      <Route exact path="/" element={<About />}/>
+      <Route exact path="/contact" element={<Contact />}/>
+      </Routes>
+
+    </Router> 
+ 
   )
 }
 

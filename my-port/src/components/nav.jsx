@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';  
 import Icon from './ui/icon';
 
 function Navbar() {
@@ -6,25 +6,33 @@ function Navbar() {
     
 
     <nav id="menu">
+
+    <div class="menu-item highlight">
+            <div class="menu-text">
+            <Link className="font-medium" to={'/'}>
+              Home
+            </Link>
+            </div>
+        </div> 
         <div class="menu-item">
             <div class="menu-text">
-                <a href="#">Projects</a>
-            </div>  
-        </div>
-        <div class="menu-item highlight">
-            <div class="menu-text">
-                <a href="#">Services</a>
-            </div>
+            <Link className="font-medium" to={'#'}>
+              Projects
+            </Link>          
         </div>  
+        </div> 
         <div class="menu-item highlight">
-            <div class="menu-text">
-                <a href="#">About Me</a>
+            <div class="menu-text"> 
+            <Link className="font-medium" to={'#'}>
+              pro
+            </Link>
             </div>
         </div>
         <div class="menu-item">
             <div class="menu-text">
-                <a href="#">Contact Me</a>
-            </div>
+            <Link className="font-medium" to={'/contact'}>
+              Contact Me
+            </Link></div>
         </div>
     </nav>
   )
