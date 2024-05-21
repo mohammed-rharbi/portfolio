@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(45deg, #091458, #000000);
+  height: auto;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -434,6 +435,7 @@ div.fg{
     var(--gold) 31%);
   color: #1e2127;
   transform: scale(1);
+  
 }
 
 .hero-content p {
@@ -441,8 +443,23 @@ div.fg{
   font-family: '';
   color: rgb(255, 255, 255);
   text-shadow: 15px 15px 7px #000000;
- margin: 3em 0 2em -14em;
+  margin: 3em 0 2em -14em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+  typing 4s ,
+  cursor .4s step-end infinite alternate
+  ;
 }
+
+@keyframes cursor{
+  50% {border-color: transparent;}
+}
+
+@keyframes typing{
+  form {width: 0;}
+}
+
 .hero-content p span{
   font-family: "Lobster Two", sans-serif;
   font-weight: 400;
@@ -620,25 +637,58 @@ contact
 
 
 
+/* Add these styles to your CSS file */
+
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
 }
 
-.form-center {
-  background-color: rgba(0, 0, 0, 0.47); /* Background color of the contact form */
+.form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.316);
   padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0px 0px 30px goldenrod;
-  
+  z-index: 9999; /* Ensure it's above the overlay */
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-button, .reset-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button {
+  background: #007bff;
+  color: white;
+}
+
+.reset-button {
+  background: #ccc;
+  color: black;
+}
+
 
 
 /*
@@ -725,3 +775,242 @@ cards js
 /*
 cards js
 */
+
+
+
+
+
+
+
+
+
+
+/* Typing effect styles */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  font-family: monospace;
+  font-size: 1.2em;
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skills-section {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-section h2 {
+  margin-bottom: 60px;
+  font-size: 3em;
+  font-family: 'Gill Sans';
+  color: #ffffff;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(113, 164, 230, 0.974);
+  
+}
+
+.skill-icon {
+  font-size: 70px;
+  margin-bottom: 10px;
+  color: #2fa3c4; /* React icon color */
+}
+/* 
+.skill-icon:hover {
+
+  filter: drop-shadow(0 0 20px black);
+} */
+
+.skill-info {
+  text-align: center;
+}
+
+.skill-name {
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.skill-level {
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+
+
+/*
+projects
+*/
+
+.projects-section h1 {
+  
+  color: white;
+  font-size: 3em;
+  font-family: 'Gill Sans';
+  margin: 3em 0 2em 0 ;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card{
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;  
+  text-align: center;
+}
+
+.project-card img{
+  border: 2px solid #ddd;
+  width: auto;
+}
+
+.project-name {
+  margin-top:1.5em;
+  font-size: 1.7em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.project-description{
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.project-button {
+  background-color: #0059f7   ;
+  color: #ffffff;
+  padding: 5px;
+  width: 15em;
+  height: 3em;
+  margin-top:2em;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+}
+
+.project-technology {
+  background-color: #0a89a8;
+  color: white;
+  padding: 7px 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 50em;
+}
+
+
+
+/*
+projects
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jjj {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.jkk {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.ll {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.bbb {
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bbb:hover {
+  background-color: #0056b3;
+}

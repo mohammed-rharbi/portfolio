@@ -5,7 +5,9 @@ import './App.css'
 import Navbar from './components/nav';
 import About from './components/about';
 import Contact from './components/contact';
-import Cards from './components/ui/cards';
+import Skills from './components/skills';
+import HireMe from './components/hire_me';
+import Jokes from './components/joke';
 
 
 
@@ -15,10 +17,13 @@ function App() {
   return (
     <Router>
       <Navbar />
-
       <Routes>
       <Route exact path="/" element={<About />}/>
       <Route exact path="/contact" element={<Contact />}/>
+      <Route exact path="/skills" element={<Skills />}/>
+      <Route exact path="/hireme" element={<HireMe />}/>
+      <Route exact path="/joke" element={<Jokes/>}/>
+
       </Routes>
 
     </Router> 

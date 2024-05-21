@@ -16,21 +16,21 @@ function Navbar() {
         </div> 
         <div class="menu-item">
             <div class="menu-text">
-            <Link className="font-medium" to={'#'}>
+            <Link className="font-medium" to={'/skills'}>
               Projects
             </Link>          
         </div>  
         </div> 
         <div class="menu-item highlight">
             <div class="menu-text"> 
-            <Link className="font-medium" to={'#'}>
+            <Link className="font-medium" to={'/joke'}>
               pro
             </Link>
             </div>
         </div>
         <div class="menu-item">
             <div class="menu-text">
-            <Link className="font-medium" to={'/contact'}>
+            <Link className="font-medium" to={'/hireme'}>
               Contact Me
             </Link></div>
         </div>

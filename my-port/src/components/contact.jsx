@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import emailjs from 'emailjs-com';
 
-function Contact() {
-  const [showForm, setShowForm] = useState(false);
+function Contact({ showForm, toggleForm }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,13 +12,9 @@ function Contact() {
 
   const formRef = useRef(null);
 
-  const toggleForm = () => {
-    setShowForm(!showForm);
-  };
-
   const handleClickOutside = (event) => {
     if (formRef.current && !formRef.current.contains(event.target)) {
-      setShowForm(false);
+      toggleForm();
     }
   };
 
@@ -71,7 +66,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
+    <>
       {showForm && <div className="overlay"></div>}
       {showForm && (
         <div className="form-container" ref={formRef}>
@@ -127,7 +122,11 @@ function Contact() {
           </div>
         </div>
       )}
-    </div>
+
+
+
+      
+    </>
   );
 }
 
