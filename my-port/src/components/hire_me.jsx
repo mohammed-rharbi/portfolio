@@ -15,7 +15,7 @@ const HireMe = () => {
     };
 
     return (
-        <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif', lineHeight: '1.6', color: '#333' }}>
+        <div  style={{ padding: '20px', fontFamily: 'Arial, sans-serif', lineHeight: '1.6', color: '#333' }}>
             <h1>Why You Should Hire Me</h1>
             
             <section style={sectionStyle}>
