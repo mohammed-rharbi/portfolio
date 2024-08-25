@@ -9,7 +9,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, #091458, #000000);
+  background: linear-gradient(85deg, #091458, #000000);
   height: auto;
   font-family: 'Roboto', sans-serif;
 }
@@ -444,20 +444,6 @@ div.fg{
   color: rgb(255, 255, 255);
   text-shadow: 15px 15px 7px #000000;
   margin: 3em 0 2em -14em;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: 
-  typing 4s ,
-  cursor .4s step-end infinite alternate
-  ;
-}
-
-@keyframes cursor{
-  50% {border-color: transparent;}
-}
-
-@keyframes typing{
-  form {width: 0;}
 }
 
 .hero-content p span{
@@ -472,8 +458,6 @@ div.fg{
 /*
 title
 */
-
-
 
 
 
@@ -1014,3 +998,14 @@ projects
 .bbb:hover {
   background-color: #0056b3;
 }
+
+
+
+
+
+
+
+
+
+
+

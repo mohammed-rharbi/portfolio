@@ -1,6 +1,6 @@
 import React from 'react';
 import Projects from './projects';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaGitAlt, FaLaravel , FaPhp ,FaBootstrap , FaDocker  } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaGitAlt, FaLaravel , FaPhp ,FaBootstrap , FaDocker   } from 'react-icons/fa';
 
 const skills = [
   { name: 'JavaScript', icon: <FaJs />, level: 'Intermediate' },

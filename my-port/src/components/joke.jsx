@@ -24,7 +24,9 @@ const Jokes = () => {
       <button className='bbb' onClick={fetchJoke} style={{ padding: '10px 20px', background: '#007BFF', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
         Get Another Joke
       </button>
+
     </div>
+
   );
 };
 

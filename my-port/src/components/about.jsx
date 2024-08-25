@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Icon from "./ui/icon";
 import Contact from "./contact"; // Import the Contact component
-
+import Skills from "./skills";
 function About() {
   const [showForm, setShowForm] = useState(false);
 
@@ -43,7 +43,9 @@ function About() {
 
       {showForm && <Contact showForm={showForm} toggleForm={toggleForm} />}
 
-
+<section className="mt-[8rem]">
+<Skills/>
+</section>
       
     </div>
   );
