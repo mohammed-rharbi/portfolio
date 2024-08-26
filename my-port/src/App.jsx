@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 
-import Navbar from './components/nav';
+import NavBar from './components/Navbar';
 import About from './components/about';
 import Contact from './components/contact';
 import Skills from './components/skills';
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar />
+      <NavBar />
       <Routes>
       <Route exact path="/" element={<About />}/>
       <Route exact path="/contact" element={<Contact />}/>
