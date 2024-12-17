@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { FaHtml5, FaJs, FaBootstrap, FaLaravel, FaDatabase } from 'react-icons/fa'; // Example icons
+import { FaHtml5, FaJs, FaBootstrap, FaLaravel, FaDatabase  } from 'react-icons/fa'; // Example icons
 
 const Project = () => {
   const projects = [
     {
-      name: 'EventoR',
+      name: 'Evento',
       description: 'Evento is creating a platform for event management and reservations. Users can book and generate tickets, while organizers manage their events.',
-      technologies: ['SQL', 'JavaScript','Laravel'],
-      link: 'https://github.com/yourusername/project-one',
+      technologies: ['SQL', 'JavaScript','Laravel','tailwind'],
+      link: 'https://github.com/mohammed-rharbi/evento-app',
       demo: 'https://yourdemourl.com/evento',
-      image: '/public/electro-maroc-2-65b3f59c5a3bc974840308.png'
+      image: '/public/Evento.png'
     },
     {
       name: 'MonGrandTaxi',
@@ -21,12 +21,12 @@ const Project = () => {
     },
 
     {
-      name: 'MonGrandTaxi',
+      name: 'Wiki To',
       description: 'MonGrandTaxi is a user-friendly platform enabling users to find available drivers and drivers to publish their availability',
-      technologies: ['JavaScript', 'SQL', 'Laravel', 'Bootstrap'],
-      link: 'https://github.com/yourusername/project-two',
+      technologies: ['JavaScript', 'SQL', 'php', 'Bootstrap'],
+      link: 'https://github.com/mohammed-rharbi/WIKI_TO',
       demo: 'https://yourdemourl.com/mongrandtaxi',
-      image: '/public/electro-maroc-17-65c0988f5116d694298253.png'
+      image: '/public/Wiki.jpeg'
     },
     {
       name: 'MonGrandTaxi',
@@ -44,7 +44,7 @@ const Project = () => {
       demo: 'https://yourdemourl.com/mongrandtaxi',
       image: '/public/electro-maroc-17-65c0988f5116d694298253.png'
     },
-    // Add more projects as needed
+
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
