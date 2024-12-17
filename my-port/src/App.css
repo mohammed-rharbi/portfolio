@@ -5,7 +5,6 @@
 
 
 
-
 body {
   margin: 0;
   padding: 0;
@@ -14,21 +13,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.card {
-  width: 190px;
-  height: 120px;
-  padding: 0.5rem;
-  background: rgba(198, 198, 198, 0.34);
-  border-radius: 8px;
-  backdrop-filter: blur(5px);
-  border-bottom: 3px solid rgba(255, 255, 255, 0.440);
-  border-left: 2px  rgba(255, 255, 255, 0.545) outset;
-  box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
-  transform: skewX(10deg);
-  transition: .4s;
-  overflow: hidden;
-  color: white;
-}
+
 
 .card:hover {
   height: 254px;
@@ -75,8 +60,8 @@ body {
 }
 
 :root {
-  --menu-width: 37.5em; /* Width of menu */
-  --items: 4; /* Number of items you have */
+  --menu-width: 37.5em; 
+  --items: 4; 
   --item-width: calc(var(--menu-width) / var(--items));
 }
 
@@ -945,30 +930,6 @@ projects
   font-size: 12px;
   border-radius: 50em;
 }
-
-
-
-/*
-projects
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .jjj {
   text-align: center;
