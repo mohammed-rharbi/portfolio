@@ -1,6 +1,7 @@
 import React from 'react';
 import Projects from './projects';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaGitAlt, FaLaravel , FaPhp ,FaBootstrap , FaDocker   } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt ,  FaJs, FaReact, FaDatabase, FaGitAlt, FaLaravel , FaPhp ,FaBootstrap , FaDocker   } from 'react-icons/fa';
+import { TbBrandNextjs   } from "react-icons/tb";
 
 const skills = [
   { name: 'JavaScript', icon: <FaJs />, level: 'Intermediate' },
@@ -13,6 +14,8 @@ const skills = [
   { name: 'PHP', icon: <FaPhp />, level: 'Intermediate' }, 
   { name: 'Bootstrap', icon: <FaBootstrap />, level: 'Advanced' }, 
   { name: 'Docker', icon: <FaDocker />, level: 'Intermediate' }, 
+  { name: 'Next.js', icon: <TbBrandNextjs />, level: 'Intermediate' }, 
+
 
 
 ];
