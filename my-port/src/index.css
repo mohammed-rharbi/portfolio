@@ -3,12 +3,9 @@
 @import 'tailwindcss/utilities';
 
 
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  margin: 0px;
+  overscroll-behavior: none;
 }
 
 .logo {
@@ -51,19 +48,19 @@
 
 .navbar {
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start; 
   padding: 10px;
   background-color: #333;
   color: white;
 }
 
 .navbar-header {
-  margin-right: 20px; /* Adjust as needed */
+  margin-right: 20px; 
 }
 
 .navbar-brand {
   color: white;
-  font-size: 20px; /* Adjust as needed */
+  font-size: 20px;
 }
 
 .navbar-brand:hover {
@@ -76,41 +73,18 @@
 
 .navbar-nav li {
   display: inline-block;
-  margin-right: 15px; /* Adjust as needed */
+  margin-right: 15px;
 }
 
 .navbar-nav li a {
   color: white;
-  font-size: 16px; /* Adjust as needed */
+  font-size: 16px;
 }
 
 .navbar-nav li a:hover {
   color: white;
 }
 
-
-
-
-
-
-
-
-
-.navbar {
-  background-color: #B7CEEC;
-}
-
-.icon-bar {
-  background-color: #224cbd;
-}
-
-img { 
-  background: no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 
 
