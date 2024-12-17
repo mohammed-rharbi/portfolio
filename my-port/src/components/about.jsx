@@ -68,7 +68,7 @@ function About() {
             
             <img
               src="/public/file.png"
-              alt="Mohammed Rharbi"
+              alt="Mohammed Rharbi" 
               className="relative w-full max-w-sm mx-auto rounded-xl 
                 shadow-2xl group-hover:shadow-[#FFD700]/50 
                 transition duration-300 transform group-hover:scale-105"
