@@ -12,12 +12,12 @@ function About() {
 
   return (
     <main className="w-full min-h-screen bg-gradient-to-br from-[#121212] via-[#1e1e1e] to-[#000000] text-white">
-      {/* Hero Section with Enhanced Styling */}
+
       <section className="relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-20 flex flex-col md:flex-row items-center gap-12 py-16 relative z-10">
-          {/* Left Content */}
+
           <div className="md:w-1/2 text-center md:text-left space-y-6">
-            {/* Animated Greeting */}
+
             <div className="relative inline-block">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
                 Hello, <span className="text-[#FFD700] animate-pulse">World</span>!
@@ -25,7 +25,6 @@ function About() {
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#FFD700] to-transparent"></div>
             </div>
 
-            {/* Professional Introduction */}
             <p className="text-lg lg:text-xl text-gray-300 leading-relaxed">
               I'm <span className="text-[#FFD700] font-bold">Mohammed Rharbi</span>, a 
               <span className="bg-[#FFD700] text-black px-2 rounded-full ml-2 inline-block">
@@ -34,7 +33,6 @@ function About() {
               {" "}crafting innovative digital solutions with passion and precision.
             </p>
 
-            {/* Call to Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
               <button
                 onClick={toggleForm}
@@ -62,7 +60,7 @@ function About() {
             </div>
           </div>
 
-          {/* Image Section with Glowing Effect */}
+
           <div className="md:w-1/2 relative group">
             <div className="absolute -inset-2 bg-[#FFD700] rounded-xl 
               opacity-75 group-hover:opacity-100 transition duration-300 
@@ -77,22 +75,17 @@ function About() {
             />
           </div>
         </div>
-
-        {/* Icon Component */}
         <Icon />
       </section>
 
-      {/* Skills Section with Enhanced Background */}
+
       <section className="py-20 bg-gradient-to-br from-[#1e1e1e] to-[#121212]">
         <div className="container mx-auto px-6 lg:px-20 text-center">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFD700]">
-            My Professional Skills
-          </h2>
           <Skills />
         </div>
       </section>
 
-      {/* Contact Modal with Improved Styling */}
+
       {showForm && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm 
           flex items-center justify-center z-50">
