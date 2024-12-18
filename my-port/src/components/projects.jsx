@@ -9,7 +9,7 @@ const Project = () => {
       technologies: ['SQL', 'JavaScript','Laravel','tailwind'],
       link: 'https://github.com/mohammed-rharbi/evento-app',
       demo: 'https://yourdemourl.com/evento',
-      image: '/public/Evento.png'
+      image: '/Evento.png'
     },
     {
       name: 'MonGrandTaxi',
@@ -17,7 +17,7 @@ const Project = () => {
       technologies: ['JavaScript', 'SQL', 'Laravel', 'Bootstrap'],
       link: 'https://github.com/yourusername/project-two',
       demo: 'https://yourdemourl.com/mongrandtaxi',
-      image: '/public/electro-maroc-17-65c0988f5116d694298253.png'
+      image: '/electro-maroc-17-65c0988f5116d694298253.png'
     },
 
     {
@@ -26,7 +26,7 @@ const Project = () => {
       technologies: ['JavaScript', 'SQL', 'php', 'Bootstrap'],
       link: 'https://github.com/mohammed-rharbi/WIKI_TO',
       demo: 'https://yourdemourl.com/mongrandtaxi',
-      image: '/public/Wiki.jpeg'
+      image: '/Wiki.jpeg'
     },
     {
       name: 'MonGrandTaxi',
@@ -34,7 +34,7 @@ const Project = () => {
       technologies: ['JavaScript', 'SQL', 'Laravel', 'Bootstrap'],
       link: 'https://github.com/yourusername/project-two',
       demo: 'https://yourdemourl.com/mongrandtaxi',
-      image: '/public/electro-maroc-17-65c0988f5116d694298253.png'
+      image: '/electro-maroc-17-65c0988f5116d694298253.png'
     },
     {
       name: 'MonGrandTaxi',
@@ -42,7 +42,7 @@ const Project = () => {
       technologies: ['JavaScript', 'SQL', 'Laravel', 'Bootstrap'],
       link: 'https://github.com/yourusername/project-two',
       demo: 'https://yourdemourl.com/mongrandtaxi',
-      image: '/public/electro-maroc-17-65c0988f5116d694298253.png'
+      image: '/electro-maroc-17-65c0988f5116d694298253.png'
     },
 
   ];

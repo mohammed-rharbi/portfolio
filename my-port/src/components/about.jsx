@@ -47,7 +47,7 @@ function About() {
               </button>
               
               <a
-                href="/src/assets/Mohammed_Rharbi.pdf"
+                href="/mohammed-rharbi-cv.pdf"
                 download="Mohammed Rharbi CV"
                 className="px-8 py-3 rounded-full 
                   border-2 border-[#FFD700] text-[#FFD700] 
