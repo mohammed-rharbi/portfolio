@@ -95,15 +95,15 @@ function NavBar() {
               >
                 <AiOutlineHome className="mr-2 text-xl" /> Home
               </Link>
-              <Link
+              {/* <Link
                 to="/about"
                 onClick={() => setIsOpen(false)}
                 className="mt-2 md:mt-0 px-3 py-2 rounded-md text-lg font-medium text-white hover:text-blue-300 flex items-center"
               >
                 <AiOutlineUser className="mr-2 text-xl" /> About
-              </Link>
+              </Link> */}
               <Link
-                to="/skills"
+                to="/projects"
                 onClick={() => setIsOpen(false)}
                 className="mt-2 md:mt-0 px-3 py-2 rounded-md text-lg font-medium text-white hover:text-blue-300 flex items-center"
               >
