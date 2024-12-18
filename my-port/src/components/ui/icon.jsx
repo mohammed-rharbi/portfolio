@@ -2,7 +2,7 @@ import * as React from "react"
 
 
 
-function icons(){
+function Icons(){
 
     return(
 
@@ -64,4 +64,4 @@ function icons(){
     )
 }
 
-export default icons;
+export default Icons;
