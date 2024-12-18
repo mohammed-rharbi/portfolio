@@ -1,51 +1,10 @@
 import React, { useState } from 'react';
-import { FaHtml5, FaJs, FaBootstrap, FaLaravel, FaDatabase  } from 'react-icons/fa'; // Example icons
+import { FaHtml5, FaJs, FaBootstrap, FaLaravel, FaDatabase , FaReact , FaPhp , FaCss3Alt , FaNodeJs , FaDocker  } from 'react-icons/fa';
+import {projects} from '../projects'
+import { SiNestjs, SiJsonwebtokens, SiExpress, SiEjs, SiRedux, SiMongodb , SiTailwindcss , SiSocketdotio  } from 'react-icons/si';
+import { TbBrandNextjs } from "react-icons/tb";
 
 const Project = () => {
-  const projects = [
-    {
-      name: 'Evento',
-      description: 'Evento is creating a platform for event management and reservations. Users can book and generate tickets, while organizers manage their events.',
-      technologies: ['SQL', 'JavaScript','Laravel','tailwind'],
-      link: 'https://github.com/mohammed-rharbi/evento-app',
-      demo: 'https://yourdemourl.com/evento',
-      image: '/Evento.png'
-    },
-    {
-      name: 'MonGrandTaxi',
-      description: 'MonGrandTaxi is a user-friendly platform enabling users to find available drivers and drivers to publish their availability',
-      technologies: ['JavaScript', 'SQL', 'Laravel', 'Bootstrap'],
-      link: 'https://github.com/yourusername/project-two',
-      demo: 'https://yourdemourl.com/mongrandtaxi',
-      image: '/electro-maroc-17-65c0988f5116d694298253.png'
-    },
-
-    {
-      name: 'Wiki To',
-      description: 'MonGrandTaxi is a user-friendly platform enabling users to find available drivers and drivers to publish their availability',
-      technologies: ['JavaScript', 'SQL', 'php', 'Bootstrap'],
-      link: 'https://github.com/mohammed-rharbi/WIKI_TO',
-      demo: 'https://yourdemourl.com/mongrandtaxi',
-      image: '/Wiki.jpeg'
-    },
-    {
-      name: 'MonGrandTaxi',
-      description: 'MonGrandTaxi is a user-friendly platform enabling users to find available drivers and drivers to publish their availability',
-      technologies: ['JavaScript', 'SQL', 'Laravel', 'Bootstrap'],
-      link: 'https://github.com/yourusername/project-two',
-      demo: 'https://yourdemourl.com/mongrandtaxi',
-      image: '/electro-maroc-17-65c0988f5116d694298253.png'
-    },
-    {
-      name: 'MonGrandTaxi',
-      description: 'MonGrandTaxi is a user-friendly platform enabling users to find available drivers and drivers to publish their availability',
-      technologies: ['JavaScript', 'SQL', 'Laravel', 'Bootstrap'],
-      link: 'https://github.com/yourusername/project-two',
-      demo: 'https://yourdemourl.com/mongrandtaxi',
-      image: '/electro-maroc-17-65c0988f5116d694298253.png'
-    },
-
-  ];
 
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 3;
@@ -67,7 +26,22 @@ const Project = () => {
     JavaScript: <FaJs className="text-yellow-500" />,
     Bootstrap: <FaBootstrap className="text-purple-600" />,
     Laravel: <FaLaravel className="text-red-600" />,
-    SQL: <FaDatabase className="text-blue-600" />
+    SQL: <FaDatabase className="text-blue-600" />,
+    React: <FaReact className="text-blue-600" />,
+    PHP: <FaPhp className="text-blue-600" />,
+    css: <FaCss3Alt className="text-blue-600" />,
+    NodeJs: <FaNodeJs className="text-blue-600" />,
+    Mongo: <SiMongodb className="text-green-600" />,
+    Nest: <SiNestjs className="text-red-600" />,
+    Next: <TbBrandNextjs className="text-red-600" />,
+    JWT: <SiJsonwebtokens className="text-red-600" />,
+    Express: <SiExpress className="text-red-600" />,
+    EJS: <SiEjs className="text-red-600" />,
+    Redux: <SiRedux className="text-red-600" />,
+    Docker: <FaDocker className="text-blue-500" />,
+    Tailwind: <SiTailwindcss className="text-blue-500" />,
+    Socket: <SiSocketdotio className="text-blue-500" />,
+
   };
 
   return (
@@ -82,7 +56,7 @@ const Project = () => {
               <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map(tech => (
-                  <span key={tech} className="inline-flex items-center px-3 py-1 text-sm font-medium bg-gray-200 rounded-full text-gray-700">
+                  <span key={tech} className="inline-flex items-center px-4 py-2 bg-gray-200 rounded-full text-gray-700">
                     {techIcons[tech] || tech}
                   </span>
                 ))}
