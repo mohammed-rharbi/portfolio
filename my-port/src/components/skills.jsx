@@ -1,7 +1,8 @@
 import React from 'react';
-import Projects from './projects';
-import { FaHtml5, FaCss3Alt ,  FaJs, FaReact, FaDatabase, FaGitAlt, FaLaravel , FaPhp ,FaBootstrap , FaDocker   } from 'react-icons/fa';
-import { TbBrandNextjs   } from "react-icons/tb";
+import { FaHtml5, FaCss3Alt ,  FaJs, FaReact, FaDatabase, FaGitAlt, FaLaravel , FaPhp ,FaBootstrap , FaDocker  } from 'react-icons/fa';
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiNestjs, SiNodedotjs, SiJsonwebtokens, SiExpress, SiEjs, SiRedux, SiJira , SiMongodb , SiTailwindcss , SiSocketdotio , SiTypescript , SiJest} from 'react-icons/si';
+
 
 const skills = [
   { name: 'JavaScript', icon: <FaJs />, level: 'Intermediate' },
@@ -15,6 +16,18 @@ const skills = [
   { name: 'Bootstrap', icon: <FaBootstrap />, level: 'Advanced' }, 
   { name: 'Docker', icon: <FaDocker />, level: 'Intermediate' }, 
   { name: 'Next.js', icon: <TbBrandNextjs />, level: 'Intermediate' }, 
+  { name: 'Node.js', icon: <SiNodedotjs />, level: 'Intermediate' },
+  { name: 'NestJS', icon: <SiNestjs />, level: 'Intermediate' },
+  { name: 'JWT', icon: <SiJsonwebtokens />, level: 'Intermediate' },
+  { name: 'Express', icon: <SiExpress />, level: 'Intermediate' },
+  { name: 'EJS', icon: <SiEjs />, level: 'Intermediate' },
+  { name: 'Redux', icon: <SiRedux />, level: 'Intermediate' },
+  { name: 'Jira', icon: <SiJira />, level: 'Intermediate' },
+  { name: 'MongoDb', icon: <SiMongodb />, level: 'Intermediate' },
+  { name: 'Tailwind', icon: <SiTailwindcss />, level: 'Intermediate' },
+  { name: 'Socket.io', icon: <SiSocketdotio />, level: 'Intermediate' },
+  { name: 'TypeScript', icon: <SiTypescript />, level: 'Intermediate' },
+  { name: 'Jest', icon: <SiJest />, level: 'Intermediate' },
 
 ];
 
@@ -36,8 +49,7 @@ const Skills = () => {
         ))}
       </div>
 
-      <Projects></Projects>
-    </div>
+      </div>
 
   );
 };
