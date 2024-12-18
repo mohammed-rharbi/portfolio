@@ -8,8 +8,7 @@ import Contact from './components/contact';
 import Skills from './components/skills';
 import HireMe from './components/hire_me';
 import Jokes from './components/joke';
-
-
+import MyProjects from './components/myProjects';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +22,7 @@ function App() {
       <Route exact path="/skills" element={<Skills />}/>
       <Route exact path="/hireme" element={<HireMe />}/>
       <Route exact path="/joke" element={<Jokes/>}/>
+      <Route exact path="/projects" element={<MyProjects/>}/>
 
       </Routes>
 
