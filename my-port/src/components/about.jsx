@@ -11,7 +11,7 @@ function About() {
   };
 
   return (
-    <main className="w-full min-h-screen bg-gradient-to-br from-[#121212] via-[#1e1e1e] to-[#000000] text-white">
+    <main className="w-full min-h-screen text-white">
 
       <section className="relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-20 flex flex-col md:flex-row items-center gap-12 py-16 relative z-10">
@@ -67,7 +67,7 @@ function About() {
               blur-xl group-hover:blur-lg animate-pulse"></div>
             
             <img
-              src="/public/file.png"
+              src="/file.png"
               alt="Mohammed Rharbi" 
               className="relative w-full max-w-sm mx-auto rounded-xl 
                 shadow-2xl group-hover:shadow-[#FFD700]/50 
@@ -79,7 +79,7 @@ function About() {
       </section>
 
 
-      <section className="py-20 bg-gradient-to-br from-[#1e1e1e] to-[#121212]">
+      <section className="py-20">
         <div className="container mx-auto px-6 lg:px-20 text-center">
           <Skills />
         </div>

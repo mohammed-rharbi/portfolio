@@ -16,14 +16,14 @@ const skills = [
   { name: 'Docker', icon: <FaDocker />, level: 'Intermediate' }, 
   { name: 'Next.js', icon: <TbBrandNextjs />, level: 'Intermediate' }, 
 
-
-
 ];
 
 const Skills = () => {
   return (
+
+
     <div className="skills-section">
-      <h2>My Top Skills</h2>
+      <h2 className="text-2xl font-bold mt-20">My Top Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
